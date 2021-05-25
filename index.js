@@ -20,7 +20,7 @@ console.log(test);
 
 // Task 3
 
-let arr = [2, 3, 5, 8];
+const arr = [2, 3, 5, 8];
 let result = 1;
 for (i = 0; i < arr.length; i++) {
     result *= arr[i]; 
@@ -29,22 +29,20 @@ console.log(result);
 
 // Task 4
 
-let arr2 = [2, 5, 8, 15, 0, 6, 20, 3];
+const arr2 = [2, 5, 8, 15, 0, 6, 20, 3];
 let value;
 for (i = 0; i < arr2.length; i++) {
     if (arr2[i] > 5 && arr2[i] < 10) {
-        value = arr2[i];
-        console.log(value);
+        console.log(arr2[i]);
     }
 }
 
 // Task 5
 
-let arr3 = [2, 5, 8, 15, 0, 6, 20, 3];
-let cell;
+const arr3 = [2, 5, 8, 15, 0, 6, 20, 3];
 for (i = 0; i < arr3.length; i++) {
     if (!(arr3[i] % 2)) {
         cell = arr3[i];
-        console.log(cell);
+        console.log(arr3[i]);
     }
 } 
