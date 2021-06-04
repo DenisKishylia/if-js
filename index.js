@@ -42,8 +42,8 @@ for (i = 0; i < arr2.length; i++) {
 // Task 1
 
 function sum(a) {
-    return function (b) {
-        return a + b
+    return function (c) {
+        return a + c
     }
 }
 console.log(sum(5)(2));
