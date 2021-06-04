@@ -37,6 +37,35 @@ for (i = 0; i < arr2.length; i++) {
     }
 }
 
+// Lesson 4
+
+// Task 1
+
+function sum(a) {
+    return function (c) {
+        return a + c
+    }
+}
+console.log(sum(5)(2));
+
+// Task 2
+
+const colors = ['magenta', 'cyan', 'firebrick', 'springgreen', 'skyblue'];
+const prg = document.querySelectorAll('p');
+const callback = () => {
+    let colNum = 0;
+    return function() {
+        this.style.backgroundColor = colors[colNum];
+        colNum++;
+            if (colNum === colors.length) {
+                colNum = 0
+        }
+    }
+}
+for(let i = 0; i < prg.length; i++) {
+    prg[i].addEventListener('click', callback())
+}
+
 // Task 5
 
 const arr3 = [2, 5, 8, 15, 0, 6, 20, 3];
